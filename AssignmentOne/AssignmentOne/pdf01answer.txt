@@ -1,0 +1,67 @@
+﻿1. What type would you choose for the following “numbers”? 
+A person’s telephone number  uint
+A person’s height  decimal
+A person’s age  byte
+A person’s gender (Male, Female, Prefer Not To Answer)  char
+A person’s salary  decimal
+A book’s ISBN  ulong 
+A book’s price  decimal
+A book’s shipping weight  decimal 
+A country’s population  uint
+The number of stars in the universe  ulong 
+The number of employees in each of the small or medium businesses in the 
+United Kingdom (up to about 50,000 employees per business)  ushort
+
+2. What are the difference between value type and reference type variables? What is 
+boxing and unboxing?
+A data type is a value type if it holds a data value within its own memory space.
+a reference type stores the address (a pointer to another memory location) where the value is being stored.
+Boxing is the process of converting a value type to the type object or to any interface type implemented by this value type.
+Unboxing extracts the value type from the object.
+
+3. What is meant by the terms managed resource and unmanaged resource in .NET
+Managed resources are those that are pure .NET code and managed by the runtime and are under its direct control.
+Unmanaged resources are those that are not. File handles, pinned memory, COM objects, database connections etc.
+
+4. Whats the purpose of Garbage Collector in .NET? 
+.NET's garbage collector manages the allocation and release of memory for our applications, which is safter, simplifies developers' work and 
+allocates objects on managed heap efficiently
+
+
+
+1. What happens when you divide an int variable by 0? 
+It will cause System.DivideByZeroException
+
+2. What happens when you divide a double variable by 0? 
+We will get infinity without any exceptions.
+
+3. What happens when you overflow an int variable, that is, set it to a value beyond its 
+range? 
+The code is unable to build.
+
+4. What is the difference between x = y++; and x = ++y;? 
+++i means that when your code is executing it will first do i = i + 1 and then read it.
+i++ means that when your code is executing it will first read it and do the i = i + 1 after it has been read.
+
+5. What is the difference between break, continue, and return when used inside a loop 
+statement? 
+The break statement is used to terminate the LOOP or statement in which it present.
+The continue statement is used to skip over the execution part of the loop on a certain condition.
+The return statement terminates the execution of the METHOD and returns the control to the calling method. 
+
+6. What are the three parts of a for statement and which of them are required? 
+Initialization; Ending Condition; Increment / Decrement
+Only the ending condition is required.
+
+7. What is the difference between the = and == operators? 
+= assigns the value of the right side to the left side. == compares the values of both sides.
+
+8. Does the following statement compile? for ( ; true; ) ; 
+Yes.
+
+9. What does the underscore _ represent in a switch expression? 
+It represents default or other values. Switch expression is added to c# 8.0.
+
+10. What interface must an object implement to be enumerated over by using the foreach 
+statement? 
+The IEnumerable interface permits enumeration by using a foreach loop.
